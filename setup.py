@@ -5,18 +5,19 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
-    name='paretochart',
-    version='1.0',
+    name='rogeriopradoj-paretochart',
+    version='1.0.1',
     author='Abraham Lee',
     author_email='tisimst@gmail.com',
-    description="Pareto chart for python (similar to Matlab's, but much more flexible)",
-    url='https://github.com/tisimst/paretochart',
+    description="Pareto chart for python (similar to Matlab's, but much more flexible)  - Fork from @tintrinh",
+    url='https://github.com/rogeriopradoj/rogeriopradoj-paretochart',
     license='BSD License',
-    long_description=read('README.rst'),
+    long_description=read('README.md'),
     install_requires=['matplotlib'],
     packages=[
-        'paretochart'],
+        'rogeriopradoj-paretochart'],
     keywords=[
+        'rogeriopradoj',
         'matplotlib',
         'pareto',
         'chart',
@@ -47,6 +48,7 @@ setup(
         'Operating System :: POSIX :: Linux',
         'Operating System :: Unix',
         'Programming Language :: Python',
+        'Programming Language:: Python:: 3',
         'Topic :: Multimedia',
         'Topic :: Multimedia :: Graphics',
         'Topic :: Multimedia :: Graphics :: Presentation',
