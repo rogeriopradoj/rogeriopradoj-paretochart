@@ -7,4 +7,4 @@ Copyright: 2013
 
 """
 
-from paretochart import pareto
+from .paretochart import pareto

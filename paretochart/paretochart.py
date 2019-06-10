@@ -114,7 +114,7 @@ def pareto(data, labels=[], cumplot=True, axes=None, limit=1.0,
     data = list(data)
     n = len(data)
     if n!=len(labels):
-        labels = range(n)
+        labels = list(range(n))
     ordered = sorted(zip(data, labels), key=itemgetter(0), reverse=True)
     ordered_data = [dat for dat, lab in ordered]
     ordered_labels = [lab for dat, lab in ordered]
@@ -138,7 +138,7 @@ def pareto(data, labels=[], cumplot=True, axes=None, limit=1.0,
     for ld in line_data:
         if ld<limit:
             ltcount += 1
-    limit_loc = range(ltcount+1)
+    limit_loc = list(range(ltcount+1))
     
     limited_data = [ordered_data[i] for i in limit_loc]
     limited_labels = [ordered_labels[i] for i in limit_loc]
@@ -159,9 +159,9 @@ def pareto(data, labels=[], cumplot=True, axes=None, limit=1.0,
         ax2 = ax1.twinx()
     
     # plotting
-    if not data_kw.has_key('align'):
+    if 'align' not in data_kw:
         data_kw['align'] = 'center'
-    if not data_kw.has_key('width'):
+    if 'width' not in data_kw:
         data_kw['width'] = 0.9
     ax1.bar(limit_loc, limited_data, *data_args, **data_kw)
     if cumplot:
@@ -183,9 +183,9 @@ def pareto(data, labels=[], cumplot=True, axes=None, limit=1.0,
         ax2.set_ylim(0, 100)
         if limit<1.0:
             xmin,xmax = ax1.get_xlim()
-            if not limit_kw.has_key('linestyle'):
+            if 'linestyle' not in limit_kw:
                 limit_kw['linestyle'] = '--'
-            if not limit_kw.has_key('color'):
+            if 'color' not in limit_kw:
                 limit_kw['color'] = 'r'
             ax2.axhline(limit*100, xmin-1, xmax-1, **limit_kw)
     
