@@ -15,7 +15,7 @@ setup(
     long_description=read('README.md'),
     install_requires=['matplotlib'],
     packages=[
-        'rogeriopradoj-paretochart'],
+        'paretochart'],
     keywords=[
         'rogeriopradoj',
         'matplotlib',
@@ -48,7 +48,7 @@ setup(
         'Operating System :: POSIX :: Linux',
         'Operating System :: Unix',
         'Programming Language :: Python',
-        'Programming Language:: Python:: 3',
+        'Programming Language :: Python :: 3',
         'Topic :: Multimedia',
         'Topic :: Multimedia :: Graphics',
         'Topic :: Multimedia :: Graphics :: Presentation',
