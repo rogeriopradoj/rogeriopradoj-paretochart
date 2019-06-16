@@ -6,7 +6,7 @@ def read(fname):
 
 setup(
     name='rogeriopradoj-paretochart',
-    version='1.0.1',
+    version='1.0.2',
     author='Abraham Lee',
     author_email='tisimst@gmail.com',
     description="Pareto chart for python (similar to Matlab's, but much more flexible)  - Fork from @tintrinh",

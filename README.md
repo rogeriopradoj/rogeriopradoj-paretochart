@@ -83,10 +83,10 @@ fig.canvas.set_window_title('Pareto Plot Test Figure')
 plt.show()
 ```
 
-This should result in the following image ([click here](pareto_plot_test_figure.png) if the image doesn't 
+This should result in the following image ([click here](https://raw.githubusercontent.com/rogeriopradoj/rogeriopradoj-paretochart/master/pareto_plot_test_figure.png) if the image doesn't 
 show up):
 
-![pareto_plot_test_figure](pareto_plot_test_figure.png)
+![pareto_plot_test_figure](https://raw.githubusercontent.com/rogeriopradoj/rogeriopradoj-paretochart/master/pareto_plot_test_figure.png)
 
 Installation
 ------------
