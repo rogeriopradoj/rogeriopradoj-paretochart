@@ -1,5 +1,5 @@
 @RogerioPradoJ paretochart - rogeriopradoj-paretochart - Fork from @tintrinh
-===========
+============================================================================
 
 [Pareto chart](http://en.wikipedia.org/wiki/Pareto_chart) for python 3 (similar to [Matlab](http://www.mathworks.com/help/matlab/ref/pareto.html), but much more flexible) - Fork from @tintrinh.
 
@@ -8,12 +8,9 @@ Features
 
 - **Data labels** for the chart x-axis.
 - **Fully customizable** with unique ``arg`` and ``kwarg`` inputs:
-  - *Bar chart*: follows the inputs of the [matplotlib.pyplot.bar](http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.bar) 
-     function (use ``bar_args=(...)`` and ``bar_kw={...}``).
-  - *Cumulative line*: follows the inputs of the [matplotlib.pyplot.plot](http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot) 
-     function (use ``line_args=(...)`` and ``line_kw={...}``).
-  - *Limit line*: follows the inputs of the [matplotlib.axes.Axes.axhline](http://matplotlib.org/api/axes_api.html#matplotlib.axes.Axes.axhline) 
-     function (use ``limit_kw={...}``).
+  - *Bar chart*: follows the inputs of the [matplotlib.pyplot.bar](http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.bar) function (use ``bar_args=(...)`` and ``bar_kw={...}``).
+  - *Cumulative line*: follows the inputs of the [matplotlib.pyplot.plot](http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot) function (use ``line_args=(...)`` and ``line_kw={...}``).
+  - *Limit line*: follows the inputs of the [matplotlib.axes.Axes.axhline](http://matplotlib.org/api/axes_api.html#matplotlib.axes.Axes.axhline) function (use ``limit_kw={...}``).
 - Put the chart on **arbitrary axes**.
 
 Examples

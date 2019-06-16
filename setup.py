@@ -13,6 +13,7 @@ setup(
     url='https://github.com/rogeriopradoj/rogeriopradoj-paretochart',
     license='BSD License',
     long_description=read('README.md'),
+    long_description_content_type='text/markdown',
     install_requires=['matplotlib'],
     packages=[
         'paretochart'],
