@@ -83,10 +83,10 @@ fig.canvas.set_window_title('Pareto Plot Test Figure')
 plt.show()
 ```
 
-This should result in the following image ([click here](https://raw.githubusercontent.com/rogeriopradoj/rogeriopradoj-paretochart/master/pareto_plot_test_figure.png) if the image doesn't 
+This should result in the following image ([click here](https://raw.githubusercontent.com/rogeriopradoj/rogeriopradoj-paretochart/2.0.0/pareto_plot_test_figure.png) if the image doesn't 
 show up):
 
-![pareto_plot_test_figure](https://raw.githubusercontent.com/rogeriopradoj/rogeriopradoj-paretochart/master/pareto_plot_test_figure.png)
+![pareto_plot_test_figure](https://raw.githubusercontent.com/rogeriopradoj/rogeriopradoj-paretochart/2.0.0/pareto_plot_test_figure.png)
 
 Installation
 ------------
@@ -106,3 +106,22 @@ If you are using Python2, you can use original @tintrinh's project::
 ```shell
 pip install --upgrade paretochart
 ```
+
+Development and Publishing New Versions
+---------------------------------------
+
+*Using knowledge from <https://medium.com/@joel.barmettler/how-to-upload-your-python-package-to-pypi-65edc5fe9c56>*.
+
+- define next version number (try to follow [semver 2](https://semver.org/spec/v2.0.0.html)
+- make the changes in codebase
+- update `setup.py`:
+  - version
+  - download_url
+- update `README.md`:
+  - pareto_plot_test_figure url
+- commit, tag, and push to git central repo
+- create a source distribution, and validate it:
+  - `python setup.py sdist`
+  - `twine check dist/*`
+- upload the source to PyPi:
+  - `twine upload dist/*`

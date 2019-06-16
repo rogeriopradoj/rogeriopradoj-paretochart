@@ -6,17 +6,19 @@ def read(fname):
 
 setup(
     name='rogeriopradoj-paretochart',
-    version='1.0.2',
-    author='Abraham Lee',
-    author_email='tisimst@gmail.com',
+    version='2.0.0',
+    author='Rogerio Prado de Jesus',
+    author_email='rogeriopradoj@gmail.com',
     description="Pareto chart for python (similar to Matlab's, but much more flexible)  - Fork from @tintrinh",
     url='https://github.com/rogeriopradoj/rogeriopradoj-paretochart',
+    download_url='https://github.com/rogeriopradoj/rogeriopradoj-paretochart/archive/2.0.0.tar.gz',
     license='BSD License',
     long_description=read('README.md'),
     long_description_content_type='text/markdown',
     install_requires=['matplotlib'],
     packages=[
-        'paretochart'],
+        'paretochart'
+    ],
     keywords=[
         'rogeriopradoj',
         'matplotlib',
